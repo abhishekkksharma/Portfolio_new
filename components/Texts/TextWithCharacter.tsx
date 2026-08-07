@@ -6,6 +6,8 @@ import Image from "next/image";
 import RedCharacter from "../../assets/red-among-us.svg";
 import { cn } from "@/lib/utils";
 
+import { playTypingSound } from "@/hooks/useClickSound";
+
 interface TextWithCharacterProps {
   texts?: string[];
   className?: string;
@@ -14,8 +16,8 @@ interface TextWithCharacterProps {
 function TextWithCharacter({
   texts = [
     "Welcome to Abhishek's Portfolio!",
-    "Please wait while we load the app!",
-    ".....!",
+    // "Please wait while we load the app!",
+    ":)",
   ],
   className = "",
 }: TextWithCharacterProps) {
@@ -23,10 +25,7 @@ function TextWithCharacter({
 
   useEffect(() => {
     if (startTyping) {
-      const audio = new Audio("/sounds/among-us-typing.mp3");
-      audio.play().catch((err) => {
-        console.warn("Audio playback was blocked or failed:", err);
-      });
+      playTypingSound();
     }
   }, [startTyping]);
 

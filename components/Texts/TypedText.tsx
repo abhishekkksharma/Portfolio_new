@@ -12,11 +12,11 @@ export default function TypedText({
   return (
     <TextType
       text={texts}
-      typingSpeed={80}
-      pauseDuration={2500}
+      typingSpeed={60}
+      pauseDuration={1000}
       showCursor
       cursorCharacter="|"
-      deletingSpeed={40}
+      deletingSpeed={20}
       cursorBlinkDuration={0.5}
       className={className}
     />
