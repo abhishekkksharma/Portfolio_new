@@ -172,17 +172,24 @@ export default function ContactMain() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black/40">
-      <div className="relative w-240 rounded-[24px] border-[5px] border-gray-700 bg-gray-400 p-3 pr-15 shadow-2xl">
+    <div className="flex justify-center items-center min-h-screen bg-black/40 p-4 sm:p-8">
+      {/* 
+        Responsive Wrapper: 
+        Uses w-full and max-w-4xl to stretch safely on mobile while capping size on desktop. 
+        Adjusted pr-12 (mobile) to sm:pr-16 (desktop) to make room for the side button.
+      */}
+      <div className="relative w-full max-w-4xl rounded-[16px] sm:rounded-[24px] border-[3px] sm:border-[5px] border-gray-700 bg-gray-400 p-2 sm:p-3 pr-12 sm:pr-16 shadow-2xl">
+        
         {/* Inner panel */}
-        <div className="rounded-[18px] border-[4px] border-gray-600 bg-slate-300 p-3">
-          <div className="among-font flex items-center gap-2 text-3xl">
-            <MessageSquareText className="h-10 w-10 text-gray-900" />
+        <div className="rounded-[12px] sm:rounded-[18px] border-[2px] sm:border-[4px] border-gray-600 bg-slate-300 p-2 sm:p-3">
+          
+          <div className="among-font flex items-center gap-2 text-xl sm:text-3xl mb-2 sm:mb-0">
+            <MessageSquareText className="h-7 w-7 sm:h-10 sm:w-10 text-gray-900" />
             <p className="font-bold text-black">Contact</p>
           </div>
 
           {/* Chat messages */}
-          <div className="h-[500px] space-y-3 overflow-y-auto no-scrollbar rounded-lg bg-slate-200/40 p-2">
+          <div className="h-[60vh] sm:h-[500px] max-h-[500px] space-y-3 overflow-y-auto no-scrollbar rounded-lg bg-slate-200/40 p-2">
             {messages.map((message, index) => (
               <motion.div
                 key={index}
@@ -201,7 +208,7 @@ export default function ContactMain() {
           </div>
 
           {/* Input */}
-          <div className="mt-3 flex items-center gap-3 rounded-xl border-[4px] border-gray-700 bg-white px-4 py-2">
+          <div className="mt-2 sm:mt-3 flex items-center gap-2 sm:gap-3 rounded-xl border-[2px] sm:border-[4px] border-gray-700 bg-white px-3 sm:px-4 py-1.5 sm:py-2">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -211,7 +218,8 @@ export default function ContactMain() {
                 }
               }}
               disabled={step === "done"}
-              className="flex-1 bg-transparent text-xl text-black outline-none"
+              /* text-base on mobile prevents iOS Safari from auto-zooming in on focus */
+              className="flex-1 bg-transparent text-base sm:text-xl text-black outline-none min-w-0"
               placeholder={
                 step === "name"
                   ? "Type your name..."
@@ -226,16 +234,16 @@ export default function ContactMain() {
             <button
               onClick={handleSend}
               disabled={step === "done"}
-              className="rounded-full p-2 transition hover:bg-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
+              className="rounded-full p-1.5 sm:p-2 transition hover:bg-blue-100 disabled:cursor-not-allowed disabled:opacity-50 shrink-0"
             >
-              <SendHorizonal className="h-9 w-9 text-blue-600" />
+              <SendHorizonal className="h-6 w-6 sm:h-9 sm:w-9 text-blue-600" />
             </button>
           </div>
         </div>
 
         {/* Side button */}
-        <button className="absolute right-[2px] top-1/2 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border-[4px] border-gray-600 bg-gray-200 shadow-lg">
-          <div className="h-8 w-8 rounded-full bg-white" />
+        <button className="absolute right-[2px] sm:right-[4px] top-1/2 flex h-10 w-10 sm:h-14 sm:w-14 -translate-y-1/2 items-center justify-center rounded-full border-[2px] sm:border-[4px] border-gray-600 bg-gray-200 shadow-lg">
+          <div className="h-5 w-5 sm:h-8 sm:w-8 rounded-full bg-white" />
         </button>
       </div>
     </div>

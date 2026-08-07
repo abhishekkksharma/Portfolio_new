@@ -30,26 +30,32 @@ function TextWithCharacter({
   }, [startTyping]);
 
   return (
-    <div className={cn("flex justify-center items-center gap-3", className)}>
+    <div
+      className={cn(
+        "flex justify-center items-center gap-2 sm:gap-4 w-full",
+        className,
+      )}
+    >
       {/* Text on LEFT */}
-      <div className="min-w-[400px] text-right">
+      {/* Using a fixed width (240px mobile, 400px desktop) ensures the typing text doesn't shift the layout, while staying centered with the character */}
+      <div className="w-[240px] sm:w-[400px] flex justify-end">
         {startTyping && (
           <TypedText
             texts={texts}
-            className="text-lg font-sans text-gray-100"
+            className="text-sm sm:text-lg font-sans text-gray-100 text-right"
           />
         )}
       </div>
 
       {/* Character on RIGHT */}
       <div
-        className="character-enter"
+        className="character-enter shrink-0"
         onAnimationEnd={() => setStartTyping(true)}
       >
         <div className="character-bob">
           <Image
             src={RedCharacter}
-            className="w-12 h-12 transform rotate-15"
+            className="w-18 h-18 transform rotate-12 sm:rotate-15"
             alt="Red Among Us character"
           />
         </div>
