@@ -1,19 +1,15 @@
 "use client";
 
 import React from "react";
-import {
-  Settings,
-  BarChart3,
-  UserRound,
-} from "lucide-react";
+import { Settings, BarChart3, UserRound } from "lucide-react";
 
 import { useFloatingCharacters } from "@/hooks/useFloatingCharacters";
 
 import CircleButton from "../Buttons/CircleButton";
 import BoxButton from "../Buttons/BoxButton";
 import SoundButton from "../Buttons/SoundButton";
-import LinkedInLogo from "../../assets/linkedin.svg"
-import GithubLogo from "../../assets/github.svg"
+import LinkedInLogo from "../../assets/linkedin.svg";
+import GithubLogo from "../../assets/github.svg";
 import Image from "next/image";
 
 const AMONG_US_IMAGES = [
@@ -109,15 +105,20 @@ function Main() {
                 <Settings size={36} />
               </CircleButton>
 
-              <CircleButton
-                label="Profile"
-                onClick={() => handleClick("Profile")}
-              >
+              <CircleButton label="Profile" href="/profile">
                 <UserRound size={34} />
               </CircleButton>
 
-              <CircleButton label="Github" css="" href="https://github.com/abhishekkksharma">
-                <Image src={GithubLogo} alt="Github Logo" className="w-9 invert hover:invert-0" />
+              <CircleButton
+                label="Github"
+                css=""
+                href="https://github.com/abhishekkksharma"
+              >
+                <Image
+                  src={GithubLogo}
+                  alt="Github Logo"
+                  className="w-9 invert hover:invert-0"
+                />
               </CircleButton>
 
               <CircleButton
