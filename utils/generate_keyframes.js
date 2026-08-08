@@ -1,5 +1,5 @@
-const Rx = 340; // horizontal radius scaled up from 270
-const Ry = 110; // vertical radius scaled up from 85
+const Rx = 420; // horizontal radius scaled up
+const Ry = 135; // vertical radius scaled up
 const tilt = -12 * Math.PI / 180;
 
 const cosT = Math.cos(tilt);

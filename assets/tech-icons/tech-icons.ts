@@ -12,6 +12,7 @@ import NextJS from "./Next.js.svg"
 import NodeJS from "./Node.js.svg"
 import React from "./React.svg"
 import Express from "./Express.svg"
+import Tailwind from "./Tailwind CSS.svg"
 
 export{
     Bootstrap,
@@ -27,5 +28,6 @@ export{
     NextJS,
     NodeJS,
     React,
-    Express
+    Express,
+    Tailwind
 }
