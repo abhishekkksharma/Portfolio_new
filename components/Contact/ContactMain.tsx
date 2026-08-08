@@ -21,7 +21,7 @@ export default function ContactMain() {
 
   const [messages, setMessages] = useState([
     {
-      name: "Addax",
+      name: "Abhishek",
       text: "Hey! What's your name?",
       left: true,
     },
@@ -64,12 +64,12 @@ export default function ContactMain() {
 
       setStep("email");
 
-      // Append Addax reply after delay
+      // Append Abhishek reply after delay
       setTimeout(() => {
         setMessages((prev) => [
           ...prev,
           {
-            name: "Addax",
+            name: "Abhishek",
             text: "Nice to meet you! What's your email?",
             left: true,
           },
@@ -94,12 +94,12 @@ export default function ContactMain() {
 
       setStep("message");
 
-      // Append Addax reply after delay
+      // Append Abhishek reply after delay
       setTimeout(() => {
         setMessages((prev) => [
           ...prev,
           {
-            name: "Addax",
+            name: "Abhishek",
             text: "Awesome! What would you like to tell me?",
             left: true,
           },
@@ -145,7 +145,7 @@ export default function ContactMain() {
             setMessages((prev) => [
               ...prev,
               {
-                name: "Addax",
+                name: "Abhishek",
                 text: "Thanks! Your message has been sent successfully.",
                 left: true,
               },
@@ -159,7 +159,7 @@ export default function ContactMain() {
           setMessages((prev) => [
             ...prev,
             {
-              name: "Addax",
+              name: "Abhishek",
               text: "Something went wrong. Please try again.",
               left: true,
             },

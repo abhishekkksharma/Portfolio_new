@@ -6,14 +6,30 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [isMounted, setIsMounted] = useState(false); 
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 7800);
+    setIsMounted(true); 
 
-    return () => clearTimeout(timer);
+    const hasSeenIntro = sessionStorage.getItem("hasSeenIntro");
+
+    if (hasSeenIntro) {
+      setLoading(false);
+    } else {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem("hasSeenIntro", "true");
+      }, 7800);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
+
+  // Show a blank background (matching your main wrapper) until mounted 
+  // to prevent the split-second flash of the wrong component.
+  if (!isMounted) {
+    return <main className="relative min-h-screen overflow-hidden bg-transparent" />;
+  }
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-transparent">
