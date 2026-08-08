@@ -53,7 +53,7 @@ function Page() {
           <Image
             src={Red_Character}
             alt="character"
-            className="relative z-10 w-52 h-52 object-contain character-bob"
+            className="relative z-10 w-58 h-58 object-contain character-bob"
           />
 
           {/* Front Rings (in front of character, z-index 11 & 12) */}
