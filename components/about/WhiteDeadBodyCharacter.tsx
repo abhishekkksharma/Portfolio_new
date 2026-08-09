@@ -1,0 +1,20 @@
+import React from 'react'
+import Image from 'next/image'
+import WhiteDeadBody from "../../assets/whiteDeadBodyCharacter.png"
+
+function WhiteDeadBodyCharacter({ onClick }: { onClick?: () => void }) {
+  return (
+    // Removed the conflicting 'relative' class, kept your 'absolute' positioning
+    <div className="absolute top-110 left-28 cursor-pointer group" onClick={onClick}>
+        
+        {/* Tooltip */}
+        <p className='hidden group-hover:flex absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 text-white rounded-2xl px-2 py-0.5 font-mono text-sm border border-white whitespace-nowrap z-10'>
+          Report
+        </p>
+        
+        <Image src={WhiteDeadBody} className="w-14 h-14" alt="white-dead-body"/>
+    </div>
+  )
+}
+
+export default WhiteDeadBodyCharacter
