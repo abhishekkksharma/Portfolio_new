@@ -238,7 +238,7 @@ function Ghost({ onClick }: { onClick?: () => void }) {
       </div>
 
       {/* Virtual Joystick for Mobile and Desktop users */}
-      <div className="fixed bottom-6 right-6 z-50 p-2 select-none bg-transparent">
+      <div className="fixed bottom-6 right-6 lg:right-15 z-50 p-2 select-none bg-transparent">
         <div
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
