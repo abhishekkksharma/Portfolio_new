@@ -16,43 +16,52 @@ import {
     KnowmoImage2,
     KnowmoImage3,
 
-    WalletImage1
+    WalletImage1,
+    WalletImage2
 } from "../../assets/projects/ProjectImages"
 import MappedProjects from "./MappedProjects";
 
 const projectsArray = [
   {
-    name: "KwnowMo",
-    content: "KnowMo is a community-driven learning platform built for Chitkara University students. It provides a single place to discover and share notes, study materials, guides, and resources contributed by students who have already walked the same academic path.",
-    link: "https://knowmo.vercel.app/",
-    githubLink: "https://github.com/abhishekkksharma/KnowMo",
-    tech:["NextJs","MongoDB","Nodejs","ExpressJs"],
-    images:[KnowmoImage1,KnowmoImage2,KnowmoImage3]
+    name: "KnowMo",
+    content:
+      "KnowMo is a community-driven learning platform for Chitkara University students to discover and share notes, study materials, guides, and academic resources contributed by fellow students.",
+    link: "[https://knowmo.vercel.app/](https://knowmo.vercel.app/)",
+    githubLink:
+      "[https://github.com/abhishekkksharma/KnowMo](https://github.com/abhishekkksharma/KnowMo)",
+    tech: ["Next.js", "MongoDB", "Node.js", "Express.js"],
+    images: [KnowmoImage1, KnowmoImage2, KnowmoImage3]
   },
   {
     name: "Addax",
-    content: "Addax — an AI-powered learning assistant for YouTube videos.",
-    link: "https://addaxx.vercel.app/",
-    githubLink: "https://github.com/abhishekkksharma/",
-    tech:["MERN","RAG","OAuth","JWT"],
-    images:[AddaxImage1,AddaxImage2,AddaxImage3]
+    content:
+      "Addax is an AI-powered learning assistant for YouTube videos that helps users understand video content through retrieval-augmented generation, authentication, and an interactive learning experience.",
+    link: "[https://addaxx.vercel.app/](https://addaxx.vercel.app/)",
+    githubLink:
+      "[https://github.com/abhishekkksharma/](https://github.com/abhishekkksharma/)",
+    tech: ["MERN", "RAG", "OAuth", "JWT"],
+    images: [AddaxImage1, AddaxImage2, AddaxImage3]
   },
   {
     name: "Anchor",
-    content: "Anchor is a Developer Community platform build for learning, collaboration and connecting to people around you.",
-    link: "https://anchor-ten-pi.vercel.app/about",
-    githubLink: "https://github.com/abhishekkksharma/Anchor",
-    tech:["MERN","OAuth","JWT"],
-    images:[AnchorImage1,AnchorImage2,AnchorImage3]
+    content:
+      "Anchor is a developer community platform built for learning, collaboration, and connecting with people around you through real-time communication, content sharing, and location-based discovery.",
+    link: "[https://anchor-ten-pi.vercel.app/about](https://anchor-ten-pi.vercel.app/about)",
+    githubLink:
+      "[https://github.com/abhishekkksharma/Anchor](https://github.com/abhishekkksharma/Anchor)",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    images: [AnchorImage1, AnchorImage2, AnchorImage3]
   },
   {
     name: "Wallet",
-    content: "Wallet is a personal document-management web app that lets you store all your important cards online, so you don’t need to carry them physically. You can even open the camera and add a new card instantly by just capturing it.",
-    link: "https://wallet-chi-five.vercel.app/",
-    githubLink: "https://github.com/abhishekkksharma/Wallet",
-    tech:["ReactJs","Supabase"],
-    images:[WalletImage1],
-  },
+    content:
+      "Wallet is a secure digital ID manager that lets users store, organize, and retrieve important documents online using authentication, encrypted storage, and a responsive interface for easy access.",
+    link: "[https://wallet-chi-five.vercel.app/](https://wallet-chi-five.vercel.app/)",
+    githubLink:
+      "[https://github.com/abhishekkksharma/Wallet](https://github.com/abhishekkksharma/Wallet)",
+    tech: ["React", "Redux Toolkit", "Supabase"],
+    images: [WalletImage1, WalletImage2]
+  }
 ];
 
 function ProjectsMain() {

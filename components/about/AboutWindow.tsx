@@ -85,7 +85,7 @@ function AboutWindow({
         </div>
 
         {/* Content */}
-        <div className="relative flex-1 overflow-auto bg-white/80 p-8 backdrop-blur-xl">
+        <div className="relative flex-1 overflow-auto bg-white p-8 select-text">
           {children}
         </div>
 

@@ -11,6 +11,7 @@ import KnowmoImage2 from "./knowmo2.png"
 import KnowmoImage3 from "./knowmo3.png"
 
 import WalletImage1 from "./wallet1.png"
+import WalletImage2 from "./wallet2.png"
 
 export {
     AnchorImage1,
@@ -25,5 +26,6 @@ export {
     KnowmoImage2,
     KnowmoImage3,
 
-    WalletImage1
+    WalletImage1,
+    WalletImage2,
 }
