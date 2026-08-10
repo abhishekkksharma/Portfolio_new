@@ -10,17 +10,20 @@ interface ComputerProps {
 
 function Computer({ onClick }: ComputerProps) {
   return (
-    <div className="relative">
+    <div className="relative w-full h-full overflow-hidden">
       <Image
         src={Chamber}
-        className="w-full h-auto"
+        fill
+        className="object-cover z-0"
         alt="chamber"
+        priority
       />
 
       {/* Computer with subtle hover glow */}
       <div
         onClick={onClick}
-        className="group absolute top-93 left-143 cursor-pointer"
+        className="group absolute cursor-pointer z-10"
+        style={{ top: "42.29%", left: "35.68%" }}
       >
         <div
           className="
@@ -49,7 +52,7 @@ function Computer({ onClick }: ComputerProps) {
         path="/projects"
         side="right"
         open={true}
-        className="h-15 w-15 among-font right-62 bottom-0"
+        className="h-15 w-15 among-font right-[15.37%] bottom-0 z-10"
       />
     </div>
   );
