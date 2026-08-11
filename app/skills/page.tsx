@@ -27,9 +27,9 @@ function Page() {
     <>
       <div className="min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
         <Skills/>
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <p className="among-font text-6xl text-gray-100">Skills</p>
-        </div>
+        </div> */}
         <div className="relative w-[1050px] h-[650px] flex items-center justify-center">
           {/* Character (larger and floating) */}
           <Image

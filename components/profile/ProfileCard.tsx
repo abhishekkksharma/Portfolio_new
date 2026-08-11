@@ -92,7 +92,8 @@ function ProfileCard() {
 
         {/* Button */}
         <div className="flex justify-center z-10">
-          <button
+          <a  href="https://www.linkedin.com/in/abhish3k-sharma/"
+            target="_blank"
             className="
               bg-black
               text-white
@@ -110,7 +111,7 @@ function ProfileCard() {
             "
           >
             Connect
-          </button>
+          </a>
         </div>
 
       </div>
