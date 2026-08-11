@@ -1,9 +1,28 @@
+"use client"
+
 import Image from "next/image";
+import { useFloatingCharacters } from "@/hooks/useFloatingCharacters";
 import My_Photo from "../../assets/my_photo.png";
 
+const AMONG_US_IMAGES = [
+  "/characters/among-us_blue_char.svg",
+  "/characters/among-us_green_char.svg",
+  "/characters/among-us_purple.svg",
+  "/characters/Pink_among_us.svg",
+  "/characters/red-among-us.svg",
+  // "/characters/yellow-among-us.svg",
+];
+
+
 function Page() {
+  const floatingCharacters = useFloatingCharacters(AMONG_US_IMAGES, 10);
+
   return (
     <main className="min-h-screen w-full bg-transparent text-white px-5 sm:px-8 lg:px-16 py-10 lg:py-16">
+      {/* Floating Among Us Characters */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {floatingCharacters}
+      </div>
 
       {/* Header */}
       <header className="max-w-7xl mx-auto flex items-center justify-between mb-14 lg:mb-20">
@@ -100,7 +119,7 @@ function Page() {
             </div>
 
             <div>
-              <p className="among-font text-3xl sm:text-4xl">
+              <p className="font-mono text-2xl sm:text-3xl">
                 350+
               </p>
 
@@ -110,7 +129,7 @@ function Page() {
             </div>
 
             <div>
-              <p className="among-font text-3xl sm:text-4xl">
+              <p className="font-mono text-2xl sm:text-3xl">
                 5+
               </p>
 
