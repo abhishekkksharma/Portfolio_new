@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Settings, BarChart3, UserRound } from "lucide-react";
+import { Settings, FileUser, UserRound } from "lucide-react";
 
 import { useFloatingCharacters } from "@/hooks/useFloatingCharacters";
 
@@ -99,10 +99,10 @@ function Main() {
               <SoundButton />
 
               <CircleButton
-                label="Settings"
-                onClick={() => handleClick("Settings")}
+                label="Hire Me"
+                href="/hire-me"
               >
-                <Settings size={36} />
+                <FileUser size={36} />
               </CircleButton>
 
               <CircleButton label="Profile" href="/profile">

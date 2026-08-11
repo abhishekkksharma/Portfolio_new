@@ -1,6 +1,7 @@
 import React from "react";
 import AvatarBoy from "../../assets/avatarBoy.png";
 import Image from "next/image";
+import Link from "next/link";
 
 function MyInfo() {
   return (
@@ -116,6 +117,9 @@ function MyInfo() {
             <span className="block sm:inline mt-1 sm:mt-0">abhisheksharma7340733@gmail.com</span>
           </p>
         </div>
+        <Link href="/profile" className="text-black underline">
+          Know more about me &gt;
+        </Link>
       </div>
     </div>
   );
