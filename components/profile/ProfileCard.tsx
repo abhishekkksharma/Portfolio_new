@@ -8,91 +8,111 @@ import Image from "next/image";
 
 function ProfileCard() {
   return (
-    <div className="relative max-w-3xl py-4 sm:py-6 rounded-3xl sm:rounded-4xl overflow-hidden border-[3px] sm:border-4 border-white mx-4 sm:mx-auto">
-      {/* Background Image */}
+    <div className="relative max-w-2xl py-3 sm:py-4 rounded-2xl sm:rounded-3xl overflow-hidden border-2 sm:border-3 border-white mx-3 sm:mx-auto">
+
+      {/* Background */}
       <Image
         src={BgImage}
         alt="Profile Background"
         fill
-        className="object-cover sm:aspect-video"
+        className="object-cover"
         priority
       />
 
-      {/* Optional Overlay */}
-      <div className="absolute inset-0 bg-zinc-600/10"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-zinc-600/10" />
 
       {/* Content */}
-      <div className="flex flex-col relative p-3 py-2 sm:p-4  sm:pb-0 sm:pr-8 gap-2">
-        {/* Added items-center for mobile so the smaller image aligns well with the text block */}
-        <div className="flex gap-3 sm:gap-4 items-center sm:items-start">
-          {/* Image */}
-          {/* Reduced padding and border size for mobile */}
-          <div className="group p-2 sm:p-4 my-1 sm:my-2 bg-gray-200 border-2 sm:border-4 border-white rounded-xl sm:rounded-2xl shrink-0 z-10">
-            {/* Scaled down to w-24 (96px) for mobile, kept your exact w-42 (10.5rem) for desktop */}
-            <div className="relative w-24 h-24 sm:w-42 sm:h-42">
-              {/* Default Character */}
+      <div className="relative p-2.5 sm:p-3 flex flex-col gap-2">
+
+        {/* Profile Info */}
+        <div className="flex gap-2 sm:gap-3 items-center">
+
+          {/* Character */}
+          <div className="group p-1.5 sm:p-2.5 bg-gray-200 border-2 sm:border-3 border-white rounded-lg sm:rounded-xl shrink-0 z-10">
+            <div className="relative w-20 h-20 sm:w-32 sm:h-32">
+
+              {/* Maroon */}
               <Image
                 src={Maroon_Character}
                 alt="Maroon Character"
                 className="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
               />
 
-              {/* Batman Character */}
+              {/* Batman */}
               <Image
                 src={Batman_Character}
                 alt="Batman Character"
-                className="absolute inset-0 w-38 h-44 object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                className="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
             </div>
           </div>
 
           {/* Details */}
-          <div className="flex flex-col gap-1 sm:gap-2 font-sans min-w-0 z-10">
+          <div className="flex flex-col gap-1 sm:gap-1.5 font-sans min-w-0 z-10">
+
             <div>
-              <p className="text-zinc-500 text-[10px] sm:text-base leading-tight">
+              <p className="text-zinc-500 text-[9px] sm:text-xs leading-none">
                 EMAIL
               </p>
-              {/* truncate keeps the long email on one line for mobile */}
-              <p className="text-black font-bold text-xs sm:text-base truncate">
+              <p className="text-black font-bold text-[10px] sm:text-sm truncate">
                 abhisheksharma7340733@gmail.com
               </p>
             </div>
 
             <div>
-              <p className="text-zinc-500 text-[10px] sm:text-base leading-tight">
+              <p className="text-zinc-500 text-[9px] sm:text-xs leading-none">
                 USERNAME
               </p>
-              <p className="text-black font-semibold text-sm sm:text-xl leading-tight">
+              <p className="text-black font-semibold text-xs sm:text-base leading-tight">
                 abhishek sharma
               </p>
             </div>
 
             <div>
-              <p className="text-zinc-500 text-[10px] sm:text-base leading-tight">
+              <p className="text-zinc-500 text-[9px] sm:text-xs leading-none">
                 ROLE
               </p>
-              <p className="text-black font-semibold text-sm sm:text-xl leading-tight">
+              <p className="text-black font-semibold text-xs sm:text-base leading-tight">
                 software engineer
               </p>
             </div>
 
             <div>
-              <p className="text-zinc-500 text-[10px] sm:text-base leading-tight">
+              <p className="text-zinc-500 text-[9px] sm:text-xs leading-none">
                 EDUCATION
               </p>
-              <p className="text-black font-semibold text-sm sm:text-xl leading-tight">
+              <p className="text-black font-semibold text-xs sm:text-base leading-tight">
                 b.e cse
               </p>
             </div>
+
           </div>
         </div>
 
         {/* Button */}
         <div className="flex justify-center z-10">
-          <button className="bg-black text-white text-sm sm:text-xl px-3 sm:px-4 py-1.5 sm:py-0 border-2 sm:border-[3px] border-white rounded-md tracking-widest">
+          <button
+            className="
+              bg-black
+              text-white
+              text-xs
+              sm:text-base
+              px-3
+              sm:px-4
+              py-1
+              border-2
+              border-white
+              rounded-md
+              tracking-widest
+              hover:bg-zinc-800
+              transition-colors
+            "
+          >
             Connect
           </button>
         </div>
+
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ import {
   NextJS,
   NodeJS,
   Express,
-  React as ReactIcon,
+  ReactI as ReactIcon,
   Tailwind
 } from "../../assets/tech-icons/tech-icons";
 

@@ -1,12 +1,18 @@
-import React from 'react'
-import ProfileCard from '@/components/profile/ProfileCard'
+import React from "react";
+import ProfileCard from "@/components/profile/ProfileCard";
+import ProfileHero from "@/components/profile/ProfileHero";
+import Skills from "@/components/profile/Skills";
 
 function page() {
   return (
-    <div className='flex justify-center items-center h-screen'>
-        <ProfileCard/>
-    </div>
-  )
+    <>
+      <ProfileHero />
+      <Skills />
+      <div className="flex justify-center items-center">
+        <ProfileCard />
+      </div>
+    </>
+  );
 }
 
-export default page
+export default page;

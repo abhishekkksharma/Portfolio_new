@@ -10,9 +10,10 @@ import MongoDB from "./MongoDB.svg"
 import MySQL from "./MySQL.svg"
 import NextJS from "./Next.js.svg"
 import NodeJS from "./Node.js.svg"
-import React from "./React.svg"
+import ReactI from "./React.svg"
 import Express from "./Express.svg"
 import Tailwind from "./Tailwind CSS.svg"
+import TypeScript from "./TypeScript.svg"
 
 export{
     Bootstrap,
@@ -27,7 +28,8 @@ export{
     MySQL,
     NextJS,
     NodeJS,
-    React,
+    ReactI,
     Express,
-    Tailwind
+    Tailwind,
+    TypeScript
 }
