@@ -16,7 +16,9 @@ import {
   Express,
   Tailwind,
   TypeScript,
+  CPP
 } from "../../assets/tech-icons/tech-icons";
+
 import {
   Blue_Character,
   Green_Character,
@@ -68,6 +70,7 @@ const skillCategories = [
       { name: "Java", icon: Java },
       { name: "JavaScript", icon: JavaScript },
       { name: "TypeScript", icon: TypeScript },
+      { name: "C++", icon: CPP },
     ],
   },
   {

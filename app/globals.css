@@ -424,3 +424,59 @@ html{
 }
 
 
+@keyframes ghostMove {
+  /* Start: facing left */
+  0% {
+    left: 0;
+    transform: translateY(0) scaleX(1);
+  }
+
+  5% {
+    left: 0;
+    transform: translateY(-8px) scaleX(1);
+  }
+
+  10% {
+    left: 0;
+    transform: translateY(0) scaleX(1);
+  }
+
+  /* Turn around */
+  12% {
+    left: 0;
+    transform: translateY(0) scaleX(-1);
+  }
+
+  /* Move right */
+  50% {
+    left: calc(100% - 90px);
+    transform: translateY(-8px) scaleX(-1);
+  }
+
+  55% {
+    left: calc(100% - 90px);
+    transform: translateY(0) scaleX(-1);
+  }
+
+  /* Turn around */
+  57% {
+    left: calc(100% - 90px);
+    transform: translateY(0) scaleX(1);
+  }
+
+  /* Move left */
+  95% {
+    left: 0;
+    transform: translateY(-8px) scaleX(1);
+  }
+
+  100% {
+    left: 0;
+    transform: translateY(0) scaleX(1);
+  }
+}
+
+.ghost-move {
+  animation: ghostMove 12s ease-in-out infinite;
+  will-change: left, transform;
+}
