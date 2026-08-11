@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Settings, FileUser, UserRound } from "lucide-react";
+import { Settings, FileUser, ListCheck, UserRound } from "lucide-react";
 
 import { useFloatingCharacters } from "@/hooks/useFloatingCharacters";
 
@@ -80,7 +80,7 @@ function Main() {
 
               <BoxButton text="ABOUT ME" path="/about" />
 
-              <BoxButton text="SKILLS" path="/skills" small />
+              <BoxButton text="Hire Me" path="/hire-me" small />
 
               <BoxButton text="CONTACT" path="/contact" small />
             </div>
@@ -99,10 +99,10 @@ function Main() {
               <SoundButton />
 
               <CircleButton
-                label="Hire Me"
-                href="/hire-me"
+                label="Skills"
+                href="/skills"
               >
-                <FileUser size={36} />
+                <ListCheck size={36} />
               </CircleButton>
 
               <CircleButton label="Profile" href="/profile">

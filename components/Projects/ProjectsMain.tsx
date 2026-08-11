@@ -14,7 +14,7 @@ import {
 
     KnowmoImage1,
     KnowmoImage2,
-    KnowmoImage3,
+    // KnowmoImage3,
 
     WalletImage1,
     WalletImage2
@@ -29,8 +29,8 @@ const projectsArray = [
     link: "https://knowmo.vercel.app/",
     githubLink:
       "https://github.com/abhishekkksharma/KnowMo",
-    tech: ["Next.js", "MongoDB", "Node.js", "Express.js"],
-    images: [KnowmoImage1, KnowmoImage2, KnowmoImage3]
+    tech: ["MERN"],
+    images: [KnowmoImage1, KnowmoImage2]
   },
   {
     name: "Addax",
@@ -49,8 +49,8 @@ const projectsArray = [
     link: "https://anchor-ten-pi.vercel.app/about",
     githubLink:
       "https://github.com/abhishekkksharma/Anchor",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    images: [AnchorImage1, AnchorImage2, AnchorImage3]
+    tech: ["MERN","Paginations","Map Integration","Web Sockets"],
+    images: [AnchorImage2, AnchorImage1, AnchorImage3]
   },
   {
     name: "Wallet",
