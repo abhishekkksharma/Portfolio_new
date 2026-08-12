@@ -3,6 +3,7 @@ import Asteroid from "@/components/Skills/Asteroid";
 import { Red_Character } from "@/public/characters/Characters";
 import Image from "next/image";
 import Skills from "@/components/profile/Skills";
+import Vent from "@/components/Vent";
 
 const skills = [
   "HTML",
@@ -54,6 +55,7 @@ function Page() {
             );
           })}
         </div>
+        <Vent path="/hire-me" side="right" open={true} className="w-15 h-15"/>
       </div>
     </>
   );

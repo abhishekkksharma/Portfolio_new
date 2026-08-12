@@ -25,7 +25,7 @@ function Page() {
       </div>
 
       {/* Header */}
-      <header className="max-w-7xl mx-auto flex items-center justify-between mb-14 lg:mb-20">
+      <header className="max-w-7xl mx-auto flex items-center justify-between mb-14 lg:mb-20 pt-6 lg:pt-0">
         <div>
           <p className="among-font text-4xl sm:text-5xl lg:text-6xl">
             HIRE ME
@@ -46,13 +46,13 @@ function Page() {
 
 
       {/* Main */}
-      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-center">
+      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-start">
 
 
         {/* PHOTO */}
-        <div className="relative flex justify-center lg:justify-start">
+        <div className="relative flex justify-center lg:justify-start pt-10">
 
-          <p className="absolute -top-12 left-0 among-font text-6xl sm:text-8xl lg:text-9xl text-white/70 select-none">
+          <p className="absolute -top-2 left-0 among-font text-6xl sm:text-8xl lg:text-9xl text-white/70 select-none">
             CREWMATE
           </p>
 
