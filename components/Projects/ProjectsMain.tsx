@@ -17,11 +17,37 @@ import {
     // KnowmoImage3,
 
     WalletImage1,
-    WalletImage2
+    WalletImage2,
+
+    ArcherImage1,
+    ArcherImage2,
+    ArcherImage3,
+    ArcherImage4,
+    ArcherImage5,
+    ArcherImage6,
+    ArcherImage7,
+    ArcherImage8,
 } from "../../assets/projects/ProjectImages"
 import MappedProjects from "./MappedProjects";
 
 const projectsArray = [
+  {
+    name: "Archer",
+    content:
+      "Archer is an AI-powered System Design and Technical Project Planning Platform. It translates high-level software concepts and natural language product specifications into structured software architecture blueprints, technology stack recommendations, milestone roadmaps, actionable task lists, and interactive development environments",
+    link: "https://archer-build.vercel.app",
+    githubLink:
+      "https://github.com/abhishekkksharma/Archer",
+    tech: ["NextJs", "Express","NodeJs", "MongoDB","Github APIs"],
+    images: [ArcherImage1,
+    ArcherImage2,
+    ArcherImage3,
+    ArcherImage4,
+    ArcherImage5,
+    ArcherImage6,
+    ArcherImage7,
+    ArcherImage8,]
+  },
   {
     name: "KnowMo",
     content:

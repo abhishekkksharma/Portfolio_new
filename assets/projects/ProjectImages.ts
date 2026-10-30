@@ -13,6 +13,15 @@ import KnowmoImage3 from "./knowmo3.png"
 import WalletImage1 from "./wallet1.png"
 import WalletImage2 from "./wallet2.png"
 
+import ArcherImage1 from "./archer1.png"
+import ArcherImage2 from "./archer2.png"
+import ArcherImage3 from "./archer3.png"
+import ArcherImage4 from "./archer4.png"
+import ArcherImage5 from "./archer5.png"
+import ArcherImage6 from "./archer6.png"
+import ArcherImage7 from "./archer7.png"
+import ArcherImage8 from "./archer8.png"
+
 export {
     AnchorImage1,
     AnchorImage2,
@@ -28,4 +37,13 @@ export {
 
     WalletImage1,
     WalletImage2,
+
+    ArcherImage1,
+    ArcherImage2,
+    ArcherImage3,
+    ArcherImage4,
+    ArcherImage5,
+    ArcherImage6,
+    ArcherImage7,
+    ArcherImage8,
 }
