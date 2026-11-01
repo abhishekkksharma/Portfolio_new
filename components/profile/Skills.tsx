@@ -16,7 +16,9 @@ import {
   Express,
   Tailwind,
   TypeScript,
-  CPP
+  CPP,
+  AWS,
+  Postman
 } from "../../assets/tech-icons/tech-icons";
 
 import {
@@ -84,6 +86,8 @@ const skillCategories = [
       { name: "Git", icon: Git },
       { name: "GitHub", icon: GitHub, className: "invert" },
       { name: "Linux", icon: Linux },
+      { name: "AWS EC2", icon: AWS },
+      { name: "Postman", icon: Postman },
     ],
   },
   {

@@ -14,7 +14,9 @@ import ReactI from "./React.svg"
 import Express from "./Express.svg"
 import Tailwind from "./Tailwind CSS.svg"
 import TypeScript from "./TypeScript.svg"
-import CPP from "./C++ (CPlusPlus).svg"
+import CPP from "./cpp.svg"
+import AWS from "./AWS.svg"
+import Postman from "./Postman.svg"
 
 export{
     Bootstrap,
@@ -33,5 +35,7 @@ export{
     Express,
     Tailwind,
     TypeScript,
-    CPP
+    CPP,
+    AWS,
+    Postman
 }
